@@ -4,7 +4,7 @@ class TweetForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: "Whats happening?"
+      value: ""
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -25,6 +25,7 @@ class TweetForm extends React.Component {
       <div className="example">
         <form onSubmit={this.handleSubmit}>
           <textarea
+            placeholder="Whats happening?"
             value={this.state.value}
             onChange={this.handleChange}
             cols={40}

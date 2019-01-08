@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 class AddFriend extends React.Component {
   constructor(props) {
@@ -50,7 +50,7 @@ class ShowList extends React.Component {
   }
 }
 
-class YukBerteman extends React.Component {
+class Friends extends React.Component {
   constructor(props) {
     super(props);
 
@@ -77,4 +77,4 @@ class YukBerteman extends React.Component {
   }
 }
 
-export default YukBerteman;
+export default Friends;

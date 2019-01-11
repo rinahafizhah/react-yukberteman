@@ -1,4 +1,10 @@
 import React from "react";
+import styled from "styled-components";
+
+const Textarea = styled.textarea`
+  border: 5px;
+  border-radius: 25px;
+`;
 
 class TweetForm extends React.Component {
   constructor(props) {

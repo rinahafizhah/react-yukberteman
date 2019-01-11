@@ -1,16 +1,29 @@
 import React, { Component } from "react";
 import TweetForm from "./TweetForm";
 import Friends from "./Friends";
-import "./App.css";
+
+import styled from "styled-components";
+
+const Title = styled.h1`
+font-size: 20px;
+font-weight: 700;
+color: black;
+`
+const Application = styled.div`
+display: flex;
+align-items: center;
+flex-direction: column;
+`
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>Compose New Tweet</h1>
+      <Application>
+        <Title>Compose New Tweet</Title>
         <TweetForm />
         <Friends />
-      </div>
+        
+      </Application>
     );
   }
 }
